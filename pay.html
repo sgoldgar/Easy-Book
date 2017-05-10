@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<title>Easy Book - Payment</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="easybook.css" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<div class="progress_container">
+		<ul class="progressbar">
+			<li class="active">Input Information</li>
+			<li class="active">Pick a Flight</li>
+			<li class="active">Payment</li>
+			<li>Confirmation</li>
+		</ul>
+	</div>
+</head>
+<body>
+	<div class="middlebackground">
+		<div class="personal_info">
+			<h3>Passenger Info:</h3>
+			<div class="row">
+				<div class="column">
+					<name><strong>First Name:</strong></name>
+					<input type="text" id="firstname" name="firstname"></input>
+				</div>
+				<div class="column">
+					<name><strong>Last Name:</strong></name>
+				<input type="text" id="lastname" name="lastname"></input>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<name id="address"><strong>Address:</strong></name>
+				</div>
+				<div class="column">
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					Street: <input type="text" id="street" name="address"></input>
+				</div>
+				<div class="column">
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					City: <input type="text" id="city" name="address"></input>
+					<name>State:</name>
+					<select>
+						<option id ="state" value="TX">TX</option>
+					</select>
+				</div>
+				<div class="column">
+					Zip: <input type="text" id="zip" name="zip"></input>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<name>Country:</name>
+					<select>
+						<option value="USA">USA</option>
+					</select>
+				</div>
+				<div class="column">
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<name><strong>Phone:</strong></name>
+					<input type="text" id="phone" name="phone"></input>
+				</div>
+				<div class="column">
+					<name><strong>Email:</strong></name>
+					<input type="text" id="email" name="email"></input>
+				</div>
+			</div>
+			<!--circle button to add passenger-->
+			<div class="add_passenger">
+				<div class="pluscircle"><a href="#">+</a></div>
+				<p><strong>Add Passenger</strong></p>
+			</div>
+			<!--credit card info-->
+			<h3>Payment Info:</h3>
+			<div class="row">
+				<div class="column">
+					Card Number: <input type="text" id="cc" name="cc"></input>
+				</div>
+				<div class="column">
+					<input type="checkbox" id="ccdate" name="flexdate"></input>
+					<p class="cctext">Use my address for billing</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<div class="exp">
+						Exp: <input type="text" id="cc_exp" name="cc"></input>
+						/ <input type="text" id="cc_exp" name="cc"></input>
+					</div>
+					CVC: <input type="text" id="cc_cvc" name="cc"></input>
+				</div>
+				<div class="column">
+					<input type="checkbox" id="ccdate" name="flexdate"></input>
+					<p class="cctext">Use a different address</p>
+				</div>
+			</div>
+			<!--button to continue-->
+			<div class="bottom_buttons">
+				<a href="flight_choices.html" class="button" id="goback">Go Back</a>
+				<a href="confirmation_end.html" class="button" id="continue">Continue</a>			
+			</div>
+		</div>
+	</div>
+</body>
+<footer class="footer">
+    <h6>Copyright 2016 | Sarah Goldgar<h6>
+</footer>
+</html>

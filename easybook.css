@@ -1,0 +1,465 @@
+html {
+    font-family: raleway, arial, sans-serif;
+    color: white;
+}
+
+body {
+    max-width: 550px;
+    margin: 0 auto;
+    align-content: center;
+    background-image: url(plane.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.middlebackground { /*white box for interactive portion*/
+    background-color: white;
+    border-radius: 2%;
+    padding: 10px;
+    min-height:300px;
+    color: black;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+}
+
+/*login form*/
+.login {
+    text-align: center;
+    font-size: 1.25em;
+    text-decoration: underline;
+}
+
+form{
+    margin-bottom: 20px;
+}
+
+.row {
+    display:flex;
+    flex-direction:row;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+
+.row .column {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+/*buttons throughout site*/
+.button {
+  background: #689ded;
+  background-image: -webkit-linear-gradient(top, #689ded, #4588ed);
+  background-image: -moz-linear-gradient(top, #689ded, #4588ed);
+  background-image: -ms-linear-gradient(top, #689ded, #4588ed);
+  background-image: -o-linear-gradient(top, #689ded, #4588ed);
+  background-image: linear-gradient(to bottom, #689ded, #4588ed);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: .8em;
+  padding: 7px 17px 7px 17px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:hover {
+  background: #689ded;
+  background-image: -webkit-linear-gradient(top, #689ded, #2271e6);
+  background-image: -moz-linear-gradient(top, #689ded, #2271e6);
+  background-image: -ms-linear-gradient(top, #689ded, #2271e6);
+  background-image: -o-linear-gradient(top, #689ded, #2271e6);
+  background-image: linear-gradient(to bottom, #689ded, #2271e6);
+  text-decoration: none;
+}
+
+/*separating lines*/
+.line{
+    border-bottom: 1px black solid;
+    justify-content: center;
+    margin: 30px auto;
+    max-width: 300px;
+}
+
+.signup {
+    text-align: center;
+}
+
+/*progress bar*/
+.progress_container {
+    width: 75%;
+    display: flex;
+    padding-left: 38px;
+}
+
+.progressbar {
+    counter-reset: step;
+}
+
+.progressbar li {
+    list-style-type: none;
+    width: 25%;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4d5666;
+    text-shadow:0px 0px 3px #eee;
+}
+
+.progressbar li:before {
+    width: 30px;
+    height: 30px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 30px;
+    border: 2px solid #4d5666;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: white;
+    text-shadow:0px 0px 3px #eee
+}
+
+.progressbar li:after {
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #4d5666;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+    text-shadow:0px 0px 3px #eee;
+}
+
+.progressbar li:first-child:after {
+    content: none;
+}
+
+.progressbar li.active {
+    color: #308749;
+}
+
+.progressbar li.active:before {
+    border-color: #308749;
+}
+ 
+.progressbar li.active + li:after {
+    background-color: #308749;
+}
+
+/*dropdown menu*/
+.dropdown {
+    clear: both;
+    padding-left: 12px;
+    color: black;
+    padding-top: 20px;    
+}
+
+.dropdown select {
+    display: block;
+    color: black;
+}
+
+/*flight chooser*/
+.flightbox {
+    margin-top: 20px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-left: 12px;
+    color: black;
+}
+
+.flexdate {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    font-size: 13px;
+    max-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.flightcheckbox {
+    margin-top: 15px;
+    padding: 3px;
+    margin-bottom: 50px;
+}
+
+.flightinfo {
+    display: flex;
+    min-width: 900px;
+}
+
+.flightinfo_line2 {
+    display: flex;
+    min-width: 900px;
+    clear: right;
+}
+
+.addflight_text{
+    text-align: left;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 30px
+}
+
+.pluscircle{
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+	width: 30px;
+	height: 30px;
+    background-color: #689ded;
+    text-align: center;
+    float: left;
+}
+
+.pluscircle a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.textbox{
+    margin-top: 12px;
+    padding: 3px;
+}
+
+
+/*text for preferences*/
+.preference_text{
+    color: black;
+    padding-left: 17px;
+    padding-right: 13px;
+}
+
+/*checkboxes for preferences*/
+.chk_holder{
+    display: flex;
+    font-size: 13px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.chk1 {
+    width:40%;
+    color: black;
+    padding-left: 5px;
+    list-style-type: none;
+    margin-right: 5px;
+}
+
+.chk2 {
+    width:100%;
+    color: black;
+    padding-left: 5px;
+    list-style-type: none;
+}
+
+.chk3 {
+    width:75%;
+    color: black;
+    padding-left: 5px;
+    list-style-type: none;
+}
+
+.chk li {
+   display:inline-block;
+   width:100%;
+}
+
+/*name and credit card fields*/
+.personal_info {
+    margin-top: 20px;
+    color: black;
+}
+
+.personal_info .row {
+    margin-left: 12px;
+    align-content: left;
+    margin-bottom: 8px;
+    padding-top: 5px;
+}
+
+.personal_info .row .column {
+    justify-content: left;
+    text-align: left;
+}
+
+#street {
+    min-width: 200px;
+}
+
+#zip, #city {
+   max-width: 90px;
+   margin-right: 10px;
+   margin-left: 15px;
+}
+
+#cc {
+    max-width: 150px;
+}
+
+.cctext{
+    font-size: 12px;
+    display:inline;
+    clear:left;
+}
+
+.exp {
+    display:inline;
+    margin-right: 10px;
+}
+
+#cc_exp {
+    max-width: 25px;
+}
+
+#cc_cvc {
+    max-width: 40px;
+    padding-left: 5px;
+}
+
+.personal_info h3 {
+    color: black;
+    padding-left: 12px;
+    padding-bottom: 5px;
+    text-decoration: underline;
+}
+
+/*add passenger button*/
+.add_passenger {
+    padding: 10px;
+}
+
+.add_passenger p {
+    color: black;
+    margin: 5px 0 0 25px;
+    padding-left: 17px;
+}
+
+/*bottom buttons*/
+.bottom_buttons{
+    clear: both;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: inline;
+}
+.bottom_buttons a {
+    margin: 30px;
+}
+
+#book_another {
+    margin-top: 25px;
+}
+
+#close {
+    margin-top: 40px;
+}
+
+/*single bottom button*/
+.buttonrow{
+    clear: both;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.flextext{
+    padding-left: 5px;
+}
+
+/*centered confirmation text*/
+
+.confirmation {
+    color: black;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*flights displayed*/
+.flights{
+    color: black;
+    display: inline;
+    font-size: 11px;
+    line-height:1px;
+    padding-bottom: 20px;
+    border: 2px solid black;
+    display:inline-block;
+    flex-direction:row;
+    margin-bottom: 5px;
+    justify-content: center;
+    text-align: center;
+    padding-top:20px;
+    margin-left: 40px;
+
+}
+
+.flights .row {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.flights .column {
+    margin-left: 10px;
+    padding-left: -5px;
+    min-width: 200px;
+}
+
+.flights p {
+    text-align: left;
+    display:flexbox;
+}
+
+.line_flights{
+    border-bottom: 1px black solid;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 450px;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
+#present_flights {
+    color: black;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#cost {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    font-size:12px;
+}
+
+.arrive_depart {
+    min-height: 10px;
+    display: block;
+}
+
+/*footer and copyright info*/
+.footer {
+    clear: both;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}

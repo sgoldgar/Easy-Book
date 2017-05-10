@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<title>Easy Book - Flight Info</title>    
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="easybook.css" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<div class="progress_container">
+		<ul class="progressbar">
+			<li class="active">Input Information</li>
+			<li>Pick a Flight</li>
+			<li>Payment</li>
+			<li>Confirmation</li>
+		</ul>
+	</div>
+</head>
+<body>
+	<div class="middlebackground">
+		<!--dropdown menu to pick flights-->
+		<div class="dropdown"> <!--dropdown menu-->
+			<name><strong>Pick a Flight</strong></name>
+			<select>
+				<option value="colorado">Colorado</option>
+				<option value="Grandma">Visit Grandma</option>
+				<option value="Boston">Boston</option>
+			</select>
+		</div>
+		<!--container for flight inputs-->
+		<div class="flightbox">
+			<!--flight inputs-->
+			<div class="flightinfo">
+				<div class="textline"><p>1. I'm flying from</p></div>
+				<div class="textbox"><input type="text" id="flyfrom" name="flyfrom"></input></div>
+				<div class="textline"><p>to</p></div>
+				<div class="textbox"><input type="text" id="flyto" name="flyto"></input></div>
+			</div>
+			<div class="flightinfo_line2">	
+				<div class="textline"><p>on</p></div>
+				<div class="textbox"><input type="date" id="leavedate" name="leavedate"></input></div>
+				<div class="textline"><p>with</p></div>
+				<div class="textbox"><input type="number" id="passengers" name="passengers"></input></div>
+				<div class="textline"><p>passengers.</p></div>
+			</div>
+			<!--checkbox for flexdates-->
+			<div class="flexdate">
+				<input class="flightcheckbox" type="checkbox" id="flexdate" name="flexdate"></input>
+				<p class="flextext">My dates are flexible</p>
+			</div>
+			<!--circle button to add flights-->
+			<div class="pluscircle"><a href="#">+</a></div>
+			<div class="addflight_text">Add a flight</div>
+			<!--flight inputs-->
+			<div class="flightinfo">
+				<div class="textline"><p>2. I'm flying back from</p></div>
+				<div class="textbox"><input type="text" id="flyfrom" name="flyfrom"></input></div>
+				<div class="textline"><p>to</p></div>
+				<div class="textbox"><input type="text" id="flyto" name="flyto"></input></div>
+			</div>
+			<div class="flightinfo_line2">	
+				<div class="textline"><p>on</p></div>
+				<div class="textbox"><input type="date" id="leavedate" name="leavedate"></input></div>
+				<div class="textline"><p>with</p></div>
+				<div class="textbox"><input type="number" id="passengers" name="passengers"></input></div>
+				<div class="textline"><p>passengers.</p></div>
+			</div>
+			<!--checkbox for flex dates-->
+			<div class="flexdate">
+				<input class="flightcheckbox" type="checkbox" id="flexdate" name="flexdate"></input>
+				<p class="flextext">My dates are flexible</p>
+			</div>
+		</div>
+		<!--button to continue-->
+		<div class="buttonrow">
+			<a href="preferences.html" class="button" id="signup">Continue</a>
+		</div>
+	</div>	
+</body>
+<footer class="footer">
+    <h6>Copyright 2016 | Sarah Goldgar<h6>
+</footer>
+</html>
+
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<title>Easy Book - Flight Choices</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="easybook.css" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<div class="progress_container">
+		<ul class="progressbar">
+			<li class="active">Input Information</li>
+			<li class="active">Pick a Flight</li>
+			<li>Payment</li>
+			<li>Confirmation</li>
+		</ul>
+	</div>
+</head>
+<body>
+	<div class="middlebackground">
+		<div class="row">
+			<h3 id="present_flights">We think one of these flights will work for you...</h3>
+		</div>
+		<!--container for flight inputs-->
+		<div class="flights">
+			<!--flight inputs-->
+			<div class="row">
+				<div class="column">
+					<p>AA flight #122</p>
+				</div>
+				<div class="column">
+					<p>There are 0 stops</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<p class="arrive_depart">Departs: 12:00 pm on 12/5/16 at AUS</p>
+				</div>
+				<div class="column">
+					<p>This plane is a Boeing 707</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<p>Arrives: 3:00 pm on 12/5/16 at MCO</p>
+				</div>
+				<div class="column">
+					<p>It has inflight wi-fi</p>
+				</div>
+			</div>
+			<div class="line_flights"></div>
+			<div class="row">
+				<div class="column">
+					<p>AA flight #211</p>
+				</div>
+				<div class="column">
+					<p>There are 0 stops</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<p>Departs: 3:00 pm on 12/9/16 at MCO</p>
+				</div>
+				<div class="column">
+					<p>This plane is a Boeing 707</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<p>Arrives: 6:00 pm on 12/9/16 at AUS</p>
+				</div>
+				<div class="column">
+					<p>It has inflight wi-fi</p>
+				</div>
+			</div>
+			<div class="row">
+				<a href="#" class="button" id="cost">$275</a>
+			</div>
+		</div>
+		<div class="flights">
+			<!--flight inputs-->
+			<div class="row">
+				<div class="column">
+					<p>Southwest flight #432</p>
+				</div>
+				<div class="column">
+					<p>There is 1 stop in DAL for 1 hr</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<p>Departs: 11:00 am on 12/5/16 at AUS</p>
+				</div>
+				<div class="column">
+					<p>This plane is a Boeing 707</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<p>Arrives: 3:00 pm on 12/5/16 at MCO</p>
+				</div>
+				<div class="column">
+				</div>
+			</div>
+			<div class="line_flights"></div>
+			<div class="row">
+				<div class="column">
+					<p>Southwest flight #234</p>
+				</div>
+				<div class="column">
+					<p>There are 0 stops</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<p>Departs: 6:00 pm on 12/9/16 at MCO</p>
+				</div>
+				<div class="column">
+					<p>This plane is a Boeing 707</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<p>Arrives: 9:00 pm on 12/9/16 at AUS</p>
+				</div>
+				<div class="column">
+					<p>It has inflight wi-fi</p>
+				</div>
+			</div>
+			<div class="row">
+				<a href="#" class="button" id="cost">$250</a>
+			</div>
+		</div>
+		<div class="flights">
+			<!--flight inputs-->
+			<div class="row">
+				<div class="column">
+					<p>AA flight #900</p>
+				</div>
+				<div class="column">
+					<p>There are 0 stops</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<p>Departs: 5:00 pm on 12/5/16 at AUS</p>
+				</div>
+				<div class="column">
+					<p>This plane is a Boeing 707</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<p>Arrives: 8:00 pm on 12/5/16 at MCO</p>
+				</div>
+				<div class="column">
+				</div>
+			</div>
+			<div class="line_flights"></div>
+			<div class="row">
+				<div class="column">
+					<p>AA flight #100</p>
+				</div>
+				<div class="column">
+					<p>There is 1 stop in DFW for 30 min</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<p>Departs: 11:00 am on 12/9/16 at MCO</p>
+				</div>
+				<div class="column">
+					<p>This plane is a Boeing 707</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<p>Arrives: 2:30 pm on 12/9/16 at AUS</p>
+				</div>
+				<div class="column">
+					<p>It has inflight wi-fi</p>
+				</div>
+			</div>
+			<div class="row">
+				<a href="#" class="button" id="cost">$300</a>
+			</div>
+		</div>
+		<!--bottom buttons-->
+		<div class="bottom_buttons">
+			<a href="flight_picker.html" class="button" id="goback">Go Back</a>
+			<a href="confirmation_flights.html" class="button" id="continue">Continue</a>			
+		</div>
+	</div>
+</body>
+<footer class="footer">
+    <h6>Copyright 2016 | Sarah Goldgar<h6>
+</footer>
+</html>
